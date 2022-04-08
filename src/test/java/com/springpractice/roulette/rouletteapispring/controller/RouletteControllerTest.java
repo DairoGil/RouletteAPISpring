@@ -30,7 +30,7 @@ class RouletteControllerTest {
 
     @Test
     void createRoulettes() throws Exception {
-        this.mockMvc.perform(post("/roulettes/create")
+        this.mockMvc.perform(post("/roulettes/")
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content("{ \"state\":false}"))
                 .andDo(print())

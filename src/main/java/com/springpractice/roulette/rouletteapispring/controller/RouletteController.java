@@ -17,7 +17,7 @@ public class RouletteController {
     @Autowired
     RouletteServiceImpl rouletteService;
 
-    @PostMapping("/create")
+    @PostMapping("/")
     public ResponseEntity<Roulette> createRoulettes(@RequestBody Roulette roulette){
         return rouletteService.createRoulette(roulette);
     }
